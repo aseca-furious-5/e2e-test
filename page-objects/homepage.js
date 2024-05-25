@@ -1,5 +1,3 @@
-import {expect} from "@playwright/test";
-
 class Homepage {
 
     constructor(page)
@@ -33,7 +31,6 @@ class Homepage {
         return await this.cart.locator('li').allTextContents();
     }
 
-    
 }
 
 module.exports = { Homepage };

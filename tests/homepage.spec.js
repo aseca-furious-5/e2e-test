@@ -7,7 +7,7 @@ let homepage;
 test.beforeEach(async ({ page }) => {
     homepage = new Homepage(page);
     await page.goto(dataset.home.url, {viewport: null});
-    expect(page).toHaveTitle(dataset.home.title);
+    await expect(page).toHaveTitle(dataset.home.title);
 });
 
 test('Verify that the product list has items', async () => {
