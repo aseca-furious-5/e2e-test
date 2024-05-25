@@ -1,10 +1,6 @@
 {
   "home": {
-    "url": "",
-    "title": ""
-  },
-  "user1": {
-    "username": "",
-    "password": "."
+    "url": "http://localhost:3001",
+    "title": "React App"
   }
 }
