@@ -4,7 +4,7 @@ class Homepage {
     {
         this.page = page;
         this.productList = page.locator('//*[@id="root"]/div/ul[1]');
-        this.addToCartButton = page.locator('//*[@id="root"]/div/ul[1]/li/button');
+        this.addToCartButton = page.locator('//*[@id="root"]/div/ul[1]/li[1]/button');
         this.cart = page.locator('//*[@id="root"]/div/ul[2]');
         this.placeOrderButton = page.locator('//*[@id="root"]/div/button');
         this.orderDetails = page.locator('//*[@id="root"]/div/div')
