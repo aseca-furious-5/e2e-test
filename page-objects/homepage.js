@@ -3,11 +3,11 @@ class Homepage {
     constructor(page)
     {
         this.page = page;
-        this.productList = page.locator('//*[@id="root"]/div/ul[1]');
-        this.addToCartButton = page.locator('//*[@id="root"]/div/ul[1]/li[1]/button');
-        this.cart = page.locator('//*[@id="root"]/div/ul[2]');
-        this.placeOrderButton = page.locator('//*[@id="root"]/div/button');
-        this.orderDetails = page.locator('//*[@id="root"]/div/div')
+        this.productList = page.locator('//*[@id="root"]/div/div/ul[1]');
+        this.addToCartButton = page.locator('//*[@id="root"]/div/div/ul[1]/li/button');
+        this.cart = page.locator('//*[@id="root"]/div/div/ul[2]');
+        this.placeOrderButton = page.locator('//*[@id="root"]/div/div/button');
+        this.orderDetails = page.locator('//*[@id="root"]/div/div/div')
     }
 
     async countProductList()
